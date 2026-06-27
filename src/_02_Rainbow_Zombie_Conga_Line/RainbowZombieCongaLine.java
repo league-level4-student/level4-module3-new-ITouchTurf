@@ -66,7 +66,7 @@ if(congaLine.size()==0) {
 	Node<Zombie> oldLoc = congaLine.getHead();
 
 	for(int i = 0; i<position; i++) { //use get not set
-	oldLoc.setNext(oldLoc);
+	oldLoc = oldLoc.getNext();
 	}
 	oldLoc.setNext(newLoc);
 	newLoc.setPrev(oldLoc);
@@ -79,6 +79,10 @@ if(congaLine.size()==0) {
      * the conga line!
      */
     public void everyoneOut(Zombie dancer) {
+    	Zombie z = new Zombie(dancer.getZombieHatColor());
+    	
+LinkedList<Zombie> zombies = new LinkedList<Zombie>();
+zombies.remove();
 
     }
 
