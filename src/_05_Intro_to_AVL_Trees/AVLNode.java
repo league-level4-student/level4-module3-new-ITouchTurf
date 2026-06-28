@@ -7,6 +7,7 @@ public class AVLNode<T extends Comparable<T>> extends Node<T> {
     private AVLNode<T> left;
     private AVLNode<T> right;
     private int height;
+    private int children;
 
     public AVLNode(T value) {
         super(value);
@@ -36,5 +37,15 @@ public class AVLNode<T extends Comparable<T>> extends Node<T> {
     public int getHeight() {
         return this.height;
     }
+    public int getChildren() {
+    	return this.children;
+    }
+    public void setChildren() {
+    	this.children = children;
+    }
+    public T getValue() {
+    	return this.getValue();
+    }
+    
 
 }
