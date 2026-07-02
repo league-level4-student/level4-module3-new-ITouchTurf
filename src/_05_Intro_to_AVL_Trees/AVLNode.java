@@ -43,9 +43,9 @@ public class AVLNode<T extends Comparable<T>> extends Node<T> {
     public void setChildren() {
     	this.children = children;
     }
-    public T getValue() {
-    	return this.getValue();
-    }
+//    public T getValue() {
+//    	return this.getValue();
+//    }
     
 
 }
